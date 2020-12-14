@@ -16,6 +16,8 @@ def create_app(config_class=Config):
     ma.init_app(app)
 
     from app.api import bp as app_api
+    from app.base import bp as base_views
     app.register_blueprint(app_api, url_prefix='/api')
+    app.register_blueprint(base_views)
 
     return app

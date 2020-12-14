@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "app_function": "energia_api.app",
+        "profile_name": "default",
+        "project_name": "energia-api",
+        "runtime": "python3.7",
+        "s3_bucket": "zappa-8m7icp4b7",
+        "aws_region": "us-west-2",
+        "environment_variables": {
+            "SECRET_KEY": "tkljasfi2k",
+            "DATABASE_URI": "mysql+pymysql://readonly:ReadPass@database-bot-prueba.cinmqmovbvff.us-west-2.rds.amazonaws.com:3306/db_energia"
+        }
+    }
+}
